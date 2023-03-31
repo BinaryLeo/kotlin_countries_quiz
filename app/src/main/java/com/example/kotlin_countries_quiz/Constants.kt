@@ -1,7 +1,7 @@
 package com.example.kotlin_countries_quiz
 
 object Constants {
-    fun getQuestions() {
+    fun getQuestions(): ArrayList<Question> {
         val questionsList = ArrayList<Question>()
         val que1 = Question(
             1,
@@ -11,16 +11,16 @@ object Constants {
             "Armenia",
             "Australia",
             "Austria",
-            1
+            3
         )
         questionsList.add(que1)
         val que2 = Question(
             2,
             "What country does this flag belong to?",
             R.drawable.ic_canada,
-            "Argentina",
-            "Armenia",
-            "Australia",
+            "Switzerland",
+            "France",
+            "Canada",
             "Austria",
             3
         )
@@ -32,7 +32,7 @@ object Constants {
             "Belarus",
             "Belize",
             "Bolivia",
-            "Brazil",
+            "Denmark",
             4
         )
         questionsList.add(que3)
@@ -40,11 +40,11 @@ object Constants {
             4,
             "What country does this flag belong to?",
             R.drawable.ic_england,
-            "Belarus",
+            "England",
             "Belgium",
-            "Belize",
-            "Bolivia",
-            2
+            "Scotland",
+            "Estonia",
+            1
         )
         questionsList.add(que4)
         val que5 = Question(
@@ -55,7 +55,7 @@ object Constants {
             "France",
             "Fiji",
             "Finland",
-            3
+            4
         )
         questionsList.add(que5)
         val que6 = Question(
@@ -65,9 +65,10 @@ object Constants {
             "Germany",
             "Georgia",
             "Greece",
-            "none of these",
-            1
+            "Iceland",
+            4
         )
-
+    return questionsList
     }
+
 }
