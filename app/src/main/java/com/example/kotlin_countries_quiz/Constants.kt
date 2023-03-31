@@ -68,6 +68,17 @@ object Constants {
             "Iceland",
             4
         )
+        questionsList.add(que5)
+        val que7 = Question(
+            7,
+            "What country does this flag belong to?",
+            R.drawable.ic_scotland,
+            "Germany",
+            "Georgia",
+            "Greece",
+            "Scotland",
+            4
+        )
     return questionsList
     }
 
