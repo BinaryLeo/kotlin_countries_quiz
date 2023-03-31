@@ -61,6 +61,7 @@
                 >
 
                 <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Enter your name"
@@ -70,6 +71,7 @@
 
             </com.google.android.material.textfield.TextInputLayout>
             <Button
+                android:id="@+id/btn_start"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
