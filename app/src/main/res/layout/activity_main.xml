@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/ic_bg"
     android:orientation="vertical"
     tools:context=".MainActivity">
@@ -11,40 +12,88 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="Countries Quiz"
-        android:textSize="25sp"
-        android:textStyle="normal"
+        android:fontFamily="@font/poppins"
         android:gravity="center"
+        android:text="Countries Quiz"
         android:textColor="@color/white"
-    />
+        android:textSize="18sp"
+        android:textStyle="normal" />
+
     <com.google.android.material.card.MaterialCardView
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white"
+        android:alpha="0.6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:background="@color/white"
-        android:alpha="0.4"
-        android:layout_marginTop="30dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="20dp"
 
- >
+        >
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:orientation="vertical"
-            >
-
+            android:layout_margin="8dp"
+            android:orientation="vertical">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Welcome"
-                android:textSize="25sp"
-                android:textStyle="normal"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins"
                 android:gravity="center"
+                android:text="Welcome"
                 android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="Please enter your name to continue"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
+
+                >
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your name"
+                    android:textSize="14sp"
+                    android:inputType="textCapWords"
+                 />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/white"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="Start Quiz"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:layout_margin="16dp"
                 />
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="16sp"
+         android:layout_marginEnd="26dp"
+         android:fontFamily="@font/poppins"
+         android:gravity="bottom|end"
+         android:text="Developed by: BinaryLeo"
+         android:textColor="@color/white"
+         android:textSize="12sp"
+         />
+
 </LinearLayout>
